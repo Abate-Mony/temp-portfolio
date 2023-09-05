@@ -1,13 +1,32 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500&family=Poppins:wght@400;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+* > * {
+  /* font-family: 'Manrope', sans-serif; */
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: "Poppins", sans-serif;
+}
+.relief {
+  /* background-color: #3a50d9; */
+  color: #e0eff2;
+  font: italic bold 100px Georgia, Serif;
+  text-shadow: -4px 3px 0 #3a50d9, -14px 7px 0 #0a0e27;
+}
+.hero-image {
+  /* animation: scroll 100s linear infinite;
+  */
+  /* animation: scroll 100s infinite; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@keyframes scroll {
+  from {
+    background-position: 0px 0%;
+  }
+  100% {
+    background-position: 0px -400%;
+  }
 }
